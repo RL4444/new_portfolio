@@ -3,9 +3,33 @@ import CarouselComp from "./CarouselComp";
 
 // Integrate SQL backend with this so the code is more readable and clear
 const DesktopDisplay = () => {
+    const styles = {
+        carouselContainer: {
+            width: "90%",
+            marginLeft: "5%",
+            borderTop: "1px solid white",
+            paddingTop: "5vh",
+            paddingBottom: "5vh"
+        },
+        carouselHeadline: {
+            color: "orange",
+            marginBottom: "5vh",
+            marginLeft: "1vw",
+            fontSize: "2em"
+        },
+        imageContainer: {
+            width: "30vw"
+        },
+        imageSize: {
+            maxHeight: "23vh",
+            width: "24vh",
+            marginLeft: "15vw"
+        }
+    };
     return (
         <div>
             <CarouselComp
+                styles={styles}
                 title="Recent Work"
                 imagesArr={[
                     {
@@ -23,6 +47,7 @@ const DesktopDisplay = () => {
                 ]}
             />
             <CarouselComp
+                styles={styles}
                 title="Tech Stack"
                 imagesArr={[
                     {
@@ -57,7 +82,7 @@ const DesktopDisplay = () => {
                     }
                 ]}
             />
-            <CarouselComp />
+            <CarouselComp styles={styles} />
         </div>
     );
 };

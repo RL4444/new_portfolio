@@ -61,7 +61,7 @@ const WelcomeCenter = props => {
         }
     };
     let socialButtons = null;
-    if (props.windowWidth < 878) {
+    if (props.windowWidth < 1000) {
         socialButtons = <SocialButtons />;
     }
 

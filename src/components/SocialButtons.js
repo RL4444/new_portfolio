@@ -25,17 +25,25 @@ const SocialButtons = () => {
     return (
         <div style={socialButtonsContainer}>
             <div style={iconStyle}>
-                <a>
+                <a
+                    href="https://github.com/rl4444"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
                     <img style={buttomImgStyle} key="1" src="./images/github.png" />
                 </a>
             </div>
             <div style={iconStyle}>
-                <a>
+                <a
+                    href="https://linkedin.com/in/rory-l-4310b518a"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
                     <img style={buttomImgStyle} key="2" src="./images/linkedin.png" />
                 </a>
             </div>
             <div style={iconStyle}>
-                <a>
+                <a href="mailto:lewisroryjames@gmail.com">
                     <img style={buttomImgStyle} key="3" src="./images/mail.png" />
                 </a>
             </div>

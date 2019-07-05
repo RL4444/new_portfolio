@@ -4,27 +4,13 @@ import CarouselSlide from "./CarouselSlide";
 import ReactLoading from "react-loading";
 
 const CarouselComp = props => {
-    const styles = {
-        carouselContainer: {
-            width: "90%",
-            marginLeft: "5%",
-            borderTop: "1px solid white",
-            paddingTop: "5vh",
-            paddingBottom: "5vh"
-        },
-        carouselHeadline: {
-            color: "orange",
-            marginBottom: "5vh",
-            marginLeft: "1vw",
-            fontSize: "2em"
-        }
-    };
-
+    // console.log("props in carouselComp ", props);
     const mapSlideComponentImages = dataProp => {
         if (dataProp) {
             return dataProp.map((item, index) => {
                 return (
                     <CarouselSlide
+                        styles={props.styles}
                         slideImageUrl={item.imageUrl}
                         slideText={item.imageText}
                         key={index}
@@ -44,8 +30,8 @@ const CarouselComp = props => {
         }
     };
     return (
-        <div style={styles.carouselContainer}>
-            <h3 style={styles.carouselHeadline}>{props.title}</h3>
+        <div style={props.styles.carouselContainer}>
+            <h3 style={props.styles.carouselHeadline}>{props.title}</h3>
             <Carousel>{mapSlideComponentImages(props.imagesArr)}</Carousel>
         </div>
     );
