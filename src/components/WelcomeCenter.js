@@ -15,8 +15,8 @@ const WelcomeCenter = props => {
     };
     const headlineContainer = {
         marginTop: "20vh",
-        "@media (min-width: 1000px)": {
-            marginTop: "8vh"
+        "@media (min-width: 878px)": {
+            marginTop: "12vh"
         }
     };
     const welcomeCenterContainer = {
@@ -37,10 +37,34 @@ const WelcomeCenter = props => {
     const imageContainer = {
         marginTop: "2vh"
     };
+
+    let aboutMeSyle = {
+        height: "20vh",
+        color: "white",
+        transform: "translateY(0)",
+        transitionDuration: "600",
+        position: "inherit",
+        textAlign: "center",
+        fontSize: "1.5em",
+        marginTop: "3vh"
+    };
+    const aboutMe = active => {
+        console.log("does it get to here", active);
+        if (active) {
+            return (
+                <div style={aboutMeSyle}>
+                    <h5>blah blach about me </h5>
+                </div>
+            );
+        } else {
+            return null;
+        }
+    };
     let socialButtons = null;
-    if (props.windowWidth < 1000) {
+    if (props.windowWidth < 878) {
         socialButtons = <SocialButtons />;
     }
+
     return (
         <StyleRoot>
             <div style={welcomeCenterContainer}>
@@ -50,12 +74,13 @@ const WelcomeCenter = props => {
                 <div style={subHeadStyle}>
                     <h5>Full Stack Developer</h5>
                 </div>
-                <div style={imageContainer}>
+                <div onClick={props.toggleAboutMe} style={imageContainer}>
                     <CenterImage
                         windowHeight={props.windowHeight}
                         windowWidth={props.windowWidth}
                     />
                 </div>
+                {aboutMe(props.showAboutMe)}
                 <div>{socialButtons}</div>
             </div>
         </StyleRoot>

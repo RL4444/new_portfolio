@@ -4,6 +4,7 @@ import Radium from "radium";
 const NavBar = () => {
     const styles = {
         navContainer: {
+            zIndex: "1000",
             position: "fixed",
             height: "7vh",
             width: "100%",
@@ -56,13 +57,29 @@ const NavBar = () => {
     return (
         <div style={styles.navContainer}>
             <div style={styles.socialButtonContainer}>
-                <a style={styles.eachLink} key="4">
+                <a
+                    style={styles.eachLink}
+                    href="https://github.com/rl4444"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    key="4"
+                >
                     <img style={styles.eachButton} key="7" src="./images/github.png" />
                 </a>
-                <a style={styles.eachLink} key="5">
+                <a
+                    style={styles.eachLink}
+                    href="https://linkedin.com/in/rory-l-4310b518a"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    key="5"
+                >
                     <img style={styles.eachButton} key="8" src="./images/linkedin.png" />
                 </a>
-                <a style={styles.eachLink} key="6">
+                <a
+                    style={styles.eachLink}
+                    href="mailto:lewisroryjames@gmail.com"
+                    key="6"
+                >
                     <img style={styles.eachButton} key="9" src="./images/mail.png" />
                 </a>
             </div>
@@ -74,7 +91,7 @@ const NavBar = () => {
           GAMES
                 </li>
                 <li style={styles.eachListItem} key="3">
-          CONTACT
+                    <a href="mailto:lewisroryjames@gmail.com">CONTACT</a>
                 </li>
             </ul>
         </div>
