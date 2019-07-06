@@ -3,6 +3,12 @@ const app = express();
 const compression = require("compression");
 const bodyParser = require("body-parser");
 
+let domain;
+if (process.env.NODE_ENV == "production") {
+    domain = "https://rory-lewis.herokuapp.com:*";
+} else {
+    domain = "localhost:8080";
+}
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
@@ -26,7 +32,7 @@ app.get("*", function(req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
-const port = 8080;
+let port = process.env.PORT || 8080;
 
 app.listen(port, function() {
     console.log("listening on " + port);
