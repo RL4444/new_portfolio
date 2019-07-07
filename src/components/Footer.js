@@ -17,7 +17,7 @@ const Footer = () => {
             flexDirection: "column",
             justifyContent: "space-around",
             paddingLeft: "15vw",
-            fontSize: "0.7em"
+            fontSize: "1vw"
         }
     };
     return (
@@ -29,7 +29,7 @@ const Footer = () => {
                 <p>created by Rory Lewis 2019</p>
             </div>
             <div style={styles.eachRow}>
-                <p>FAQs</p>
+                <p>.</p>
             </div>
         </div>
     );

@@ -10,13 +10,13 @@ const WelcomeCenter = props => {
         textAlign: "center",
         fontSize: "6em",
         "@media (max-width: 878px)": {
-            fontSize: "3em"
+            fontSize: "2.5em"
         }
     };
     const headlineContainer = {
-        marginTop: "20vh",
+        marginTop: "4vh",
         "@media (min-width: 878px)": {
-            marginTop: "12vh"
+            marginTop: "14vh"
         }
     };
     const welcomeCenterContainer = {
@@ -29,7 +29,7 @@ const WelcomeCenter = props => {
     };
     const subHeadStyle = {
         color: "orange",
-        fontSize: "5em",
+        fontSize: "4em",
         "@media (max-width: 878px)": {
             fontSize: "2em"
         }
@@ -38,27 +38,15 @@ const WelcomeCenter = props => {
         marginTop: "2vh"
     };
 
-    let aboutMeSyle = {
-        height: "20vh",
-        color: "white",
+    const aboutMeSyle = {
+        height: "14vh",
+        color: "orange",
         transform: "translateY(0)",
         transitionDuration: "600",
         position: "inherit",
         textAlign: "center",
         fontSize: "1.5em",
         marginTop: "3vh"
-    };
-    const aboutMe = active => {
-        console.log("does it get to here", active);
-        if (active) {
-            return (
-                <div style={aboutMeSyle}>
-                    <h5>blah blach about me </h5>
-                </div>
-            );
-        } else {
-            return null;
-        }
     };
     let socialButtons = null;
     if (props.windowWidth < 1000) {
@@ -80,7 +68,12 @@ const WelcomeCenter = props => {
                         windowWidth={props.windowWidth}
                     />
                 </div>
-                {aboutMe(props.showAboutMe)}
+                <div style={aboutMeSyle}>
+                    <h5>
+            Juinor Full Stack Javascript Developer based in Berlin with
+            professional working experience in React, Graph QL, Node and others{" "}
+                    </h5>
+                </div>
                 <div>{socialButtons}</div>
             </div>
         </StyleRoot>

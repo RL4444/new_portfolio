@@ -10,18 +10,18 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showAboutMe: false,
             windowWidth: 0,
-            windowHeight: 0
+            windowHeight: 0,
+            isMobile: false
         };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-        this.toggleAboutMe = this.toggleAboutMe.bind(this);
+        this.scrollBottom = this.scrollBottom.bind(this);
     }
-    toggleAboutMe() {
-        this.setState({
-            showAboutMe: !this.state.showAboutMe
-        });
-        console.log("you clicked about me!", this.state.showAboutMe);
+    scrollBottom() {
+        window.scrollTo(
+            0,
+            document.body.scrollHeight || document.documentElement.scrollHeight
+        );
     }
     componentDidMount() {
         this.updateWindowDimensions();
@@ -38,6 +38,7 @@ class App extends Component {
             windowHeight: window.innerHeight
         });
     }
+
     render() {
         const appOuterStyle = {
             width: "100%",
@@ -50,11 +51,16 @@ class App extends Component {
         let nav = null;
         let displayNext;
 
-        if (this.state.windowWidth > 1000) {
+        if (this.state.windowWidth > 1025) {
             nav = <NavBar />;
-            displayNext = <DesktopDisplay />;
+            displayNext = <DesktopDisplay isMobile={this.state.isMobile} />;
         } else {
-            displayNext = <MobileDisplay />;
+            displayNext = (
+                <MobileDisplay
+                    scrollBottom={this.scrollBottom}
+                    updateMobileStatus={this.state.isMobile}
+                />
+            );
         }
 
         return (
@@ -64,8 +70,6 @@ class App extends Component {
                     <WelcomeCenter
                         windowHeight={this.state.windowHeight}
                         windowWidth={this.state.windowWidth}
-                        toggleAboutMe={this.toggleAboutMe}
-                        showAboutMe={this.state.showAboutMe}
                     />
                 </div>
                 {displayNext}

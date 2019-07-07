@@ -4,7 +4,6 @@ import CarouselSlide from "./CarouselSlide";
 import ReactLoading from "react-loading";
 
 const CarouselComp = props => {
-    // console.log("props in carouselComp ", props);
     const mapSlideComponentImages = dataProp => {
         if (dataProp) {
             return dataProp.map((item, index) => {
@@ -14,6 +13,8 @@ const CarouselComp = props => {
                         slideImageUrl={item.imageUrl}
                         slideText={item.imageText}
                         key={index}
+                        buttonDisplayText={item.buttonDisplayText}
+                        buttonHref={item.buttonHref}
                     />
                 );
             });

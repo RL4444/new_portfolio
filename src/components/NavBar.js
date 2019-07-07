@@ -52,6 +52,11 @@ const NavBar = () => {
                 cursor: "pointer",
                 transitionDuration: "0.5"
             }
+        },
+        eachATagItem: {
+            ":hover": {
+                color: "black"
+            }
         }
     };
     return (
@@ -84,15 +89,30 @@ const NavBar = () => {
                 </a>
             </div>
             <ul style={styles.listSyles}>
-                <li style={styles.eachListItem} key="1">
+                <a
+                    key="10"
+                    style={styles.eachListItem}
+                    href="https://github.com/rl4444"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
           WORK SAMPLES
-                </li>
-                <li style={styles.eachListItem} key="2">
-          GAMES
-                </li>
-                <li style={styles.eachListItem} key="3">
-                    <a href="mailto:lewisroryjames@gmail.com">CONTACT</a>
-                </li>
+                </a>
+                <a
+                    key="11"
+                    style={styles.eachListItem}
+                    href="./cv/rory_lewis_cv_2019.pdf"
+                    download="rory_lewis_cv_2019.pdf"
+                >
+          DOWNLOAD CV
+                </a>
+                <a
+                    style={styles.eachListItem}
+                    key="12"
+                    href="mailto:lewisroryjames@gmail.com"
+                >
+          CONTACT
+                </a>
             </ul>
         </div>
     );

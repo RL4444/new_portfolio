@@ -3,7 +3,7 @@ import Radium from "radium";
 
 const SocialButtons = () => {
     const socialButtonsContainer = {
-        marginTop: "5%",
+        marginTop: "15vh",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-around",

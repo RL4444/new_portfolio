@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const CarouselSlide = props => {
     const styles = {
@@ -9,18 +10,34 @@ const CarouselSlide = props => {
             color: "white"
         },
         textStyle: {
+            display: "flex",
+            flexDirection: "column",
+            textAlgin: "left",
             paddingLeft: "5vw",
-            width: "60%"
+            width: "60%",
+            height: "90%",
+            fontSize: "0.7em"
         }
     };
-    console.log("props in image slider ", props);
+    let buttonAvailable = null;
+    if (props.buttonDisplayText) {
+        buttonAvailable = (
+            <Button
+                buttonDisplayText={props.buttonDisplayText}
+                buttonHref={props.buttonHref}
+            />
+        );
+    }
     return (
-        <div style={styles.rowFlex}>
-            <div style={props.styles.imageContainer}>
-                <img style={props.styles.imageSize} src={props.slideImageUrl} />
-            </div>
-            <div style={styles.textStyle}>
-                <h4>{props.slideText}</h4>
+        <div>
+            <div style={styles.rowFlex}>
+                <div style={props.styles.imageContainer}>
+                    <img style={props.styles.imageSize} src={props.slideImageUrl} />
+                </div>
+                <div style={styles.textStyle}>
+                    <p>{props.slideText}</p>
+                    {buttonAvailable}
+                </div>
             </div>
         </div>
     );
