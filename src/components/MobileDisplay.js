@@ -39,7 +39,8 @@ const MobileDisplay = props => {
             }
         },
         moreButton: {
-            marginBottom: "10vh"
+            marginBottom: "10vh",
+            textAlign: "center"
         }
     };
     return (
@@ -76,9 +77,9 @@ const MobileDisplay = props => {
                             buttonHref: "https://github.com/rl4444"
                         },
                         {
-                            imageUrl: "./images/ulfs_cafe_homepage.png",
+                            imageUrl: "./images/ulfs_cafe_homepage.PNG",
                             imageText:
-                "YouTube video seach engine powered by their YT api v3 and Material UI frontend",
+                "In this project I worked as frontend developer, redesigning the cafe's website",
                             buttonDisplayText: "WEBSITE",
                             buttonHref: "https://ulfscafe.de"
                         },
