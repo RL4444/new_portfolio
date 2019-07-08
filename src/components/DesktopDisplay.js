@@ -73,7 +73,7 @@ const DesktopDisplay = () => {
                         imageText:
               "Full scale project that allows users to search if nearby Pubs are showing a football game they like",
                         buttonDisplayText: "HEROKU",
-                        buttonHref: "https://github.com/rl4444"
+                        buttonHref: "https://match-it-football.herokuapp.com/#/"
                     }
                 ]}
             />
