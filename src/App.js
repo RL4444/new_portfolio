@@ -20,7 +20,8 @@ class App extends Component {
     scrollBottom() {
         window.scrollTo(
             0,
-            document.body.scrollHeight || document.documentElement.scrollHeight
+            document.body.scrollHeight || document.documentElement.scrollHeight,
+            "smooth"
         );
     }
     componentDidMount() {

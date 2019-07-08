@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 ol,
 ul {
   list-style: none;
@@ -17,7 +20,7 @@ body {
   box-sizing: border-box;
   min-width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgb(10, 10, 10), hsl(0, 1%, 18%));
+  background-image: linear-gradient(rgb(10, 10, 10), rgb(34, 34, 34));
   background-position: fixed;
 }
 h1,
