@@ -13,11 +13,11 @@ const Button = props => {
         buttonStyling: {
             borderRadius: "2px",
             padding: "12px 35px ",
-            border: "1px solid orange",
-            color: "orange",
+            border: "1px solid tomato",
+            color: "tomato",
             ":hover": {
                 color: "black",
-                backgroundColor: "orange",
+                backgroundColor: "tomato",
                 cursor: "pointer"
             }
         },

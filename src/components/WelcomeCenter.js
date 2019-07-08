@@ -28,7 +28,7 @@ const WelcomeCenter = props => {
         justifyContent: "space-around center"
     };
     const subHeadStyle = {
-        color: "orange",
+        color: "tomato",
         fontSize: "4em",
         "@media (max-width: 878px)": {
             fontSize: "2em"
@@ -40,7 +40,7 @@ const WelcomeCenter = props => {
 
     const aboutMeSyle = {
         height: "14vh",
-        color: "orange",
+        color: "tomato",
         transform: "translateY(0)",
         transitionDuration: "600",
         position: "inherit",

@@ -30,7 +30,7 @@ const NavBar = () => {
             paddingTop: "1vh",
             width: "4vw",
             ":hover": {
-                backgroundColor: "orange",
+                backgroundColor: "tomato",
                 color: "black",
                 cursor: "pointer",
                 transitionDuration: "0.5"
@@ -47,7 +47,7 @@ const NavBar = () => {
             paddingTop: "2.5vh",
             width: "15vw",
             ":hover": {
-                backgroundColor: "orange",
+                backgroundColor: "tomato",
                 color: "black",
                 cursor: "pointer",
                 transitionDuration: "0.5"

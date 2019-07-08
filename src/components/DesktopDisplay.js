@@ -15,7 +15,7 @@ const DesktopDisplay = () => {
             marginBottom: "3vh"
         },
         carouselHeadline: {
-            color: "orange",
+            color: "tomato",
             marginBottom: "5vh",
             marginLeft: "1vw",
             fontSize: "2em"

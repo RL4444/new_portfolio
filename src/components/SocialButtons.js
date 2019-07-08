@@ -18,7 +18,7 @@ const SocialButtons = () => {
         height: "7vh",
         ":hover": {
             backgroundColor: "#ff7b00c0",
-            border: "2px solid orange",
+            border: "2px solid tomato",
             cursor: "pointer"
         }
     };
