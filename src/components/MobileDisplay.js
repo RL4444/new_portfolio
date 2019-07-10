@@ -63,18 +63,18 @@ const MobileDisplay = props => {
                             buttonHref: "https://cinuru.com"
                         },
                         {
-                            imageUrl: "./images/github.png",
+                            imageUrl: "./images/twist.jpg",
                             imageText:
                 "Open Sourced Twist bot for counting positive messages sent between channel users",
                             buttonDisplayText: "GITHUB",
-                            buttonHref: "https://github.com/rl4444"
+                            buttonHref: "https://github.com/RL4444/twist_bot"
                         },
                         {
                             imageUrl: "./images/youtube.png",
                             imageText:
                 "YouTube video seach engine powered by their YT api v3 and Material UI frontend",
                             buttonDisplayText: "GITHUB",
-                            buttonHref: "https://github.com/rl4444"
+                            buttonHref: "https://github.com/RL4444/youtube-api-search-engine"
                         },
                         {
                             imageUrl: "./images/ulfs_cafe_homepage.PNG",
