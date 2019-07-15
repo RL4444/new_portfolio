@@ -10,10 +10,12 @@ ol,
 ul {
   list-style: none;
   font-family: "Montserrat", sans-serif;
+  text-rendering: optimizeLegibility;
 }
 a {
   text-decoration: none;
   color: white;
+  text-rendering: optimizeLegibility;
 }
 body {
   padding: 0;
@@ -28,6 +30,7 @@ h2,
 h3 {
   font-family: "Roboto", sans-serif;
   mix-blend-mode: difference;
+  text-rendering: optimizeLegibility;
 }
 
 h4,
@@ -36,6 +39,7 @@ p,
 a {
   font-family: "Raleway", sans-serif;
   mix-blend-mode: difference;
+  text-rendering: optimizeLegibility;
 }
 .centerImage img {
   text-align: center;
@@ -46,4 +50,10 @@ a {
 .loader {
   padding-top: 12vh;
   margin-left: 47%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: auto;
+  }
 }
