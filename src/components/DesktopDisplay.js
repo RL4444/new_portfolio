@@ -91,6 +91,11 @@ const DesktopDisplay = () => {
                             'I have used the React library extensively for almost a year now and consider it the best tool for website development.',
                     },
                     {
+                        imageUrl: './images/tech/styled_components.png',
+                        imageText:
+                            'During my time at Hive I removed SASS from our styling and integrated Styled Components through the project.',
+                    },
+                    {
                         imageUrl: './images/tech/graphql.png',
                         imageText:
                             'I have used Graph QL at a professional level and consider it a powerful tool for efficient backend',
@@ -124,14 +129,9 @@ const DesktopDisplay = () => {
                             'During my time at Cinuru GmbH I used wrote tests for backend API testing through Jest.js.',
                     },
                     {
-                        imageUrl: './images/tech/aws.png',
-                        imageText:
-                            'I have used Amazons Lambda services at a production level for monitoring backend check scripts.',
-                    },
-                    {
                         imageUrl: './images/tech/google.png',
                         imageText:
-                            "I am also comfortable with google's API service and have experience in using the YouTube V3 API engine.",
+                            "I am comfortable with google's API service and have experience in using the YouTube V3 API engine.",
                     },
                 ]}
             />
