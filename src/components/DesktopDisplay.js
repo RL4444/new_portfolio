@@ -88,7 +88,7 @@ const DesktopDisplay = () => {
                     {
                         imageUrl: './images/tech/react.png',
                         imageText:
-                            'I have used the React library extensively for almost a year now and consider it the best tool for website development.',
+                            'I have used the React library extensively for more than two years now and consider it the best tool for website development.',
                     },
                     {
                         imageUrl: './images/tech/styled_components.png',
