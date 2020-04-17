@@ -101,8 +101,8 @@ const NavBar = () => {
                 <a
                     key="11"
                     style={styles.eachListItem}
-                    href="./cv/rory_lewis_cv_2019.pdf"
-                    download="rory_lewis_cv_2019.pdf"
+                    href="./cv/rory_lewis_cv_2020_v1.pdf"
+                    download="rory_lewis_cv_2020_v1.pdf"
                 >
           DOWNLOAD CV
                 </a>
