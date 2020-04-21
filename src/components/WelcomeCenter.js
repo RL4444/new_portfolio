@@ -60,7 +60,7 @@ const WelcomeCenter = (props) => {
                     <h2 style={headlineStyle}>RORY LEWIS</h2>
                 </div>
                 <div style={subHeadStyle}>
-                    <h5>Full Stack Developer</h5>
+                    <h5>Frontend Developer</h5>
                 </div>
                 <div onClick={props.toggleAboutMe} style={imageContainer}>
                     <CenterImage windowHeight={props.windowHeight} windowWidth={props.windowWidth} />
